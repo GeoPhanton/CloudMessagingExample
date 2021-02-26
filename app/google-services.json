@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68681468112",
+    "project_id": "cloudmessagingexample-uteq",
+    "storage_bucket": "cloudmessagingexample-uteq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68681468112:android:c9d43b10ca50c03c77f6d5",
+        "android_client_info": {
+          "package_name": "com.example.cloudmessagingexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68681468112-m5mov7nu05mcsgjj1uel7q0tv6m0stik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt3fsYtkqsQHyNDLg4TET_JLuhaX_E_QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68681468112-m5mov7nu05mcsgjj1uel7q0tv6m0stik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
