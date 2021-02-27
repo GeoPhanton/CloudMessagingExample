@@ -9,27 +9,58 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/idtoolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7443CC"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Firebase Cloud Messaging"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerInParent="true">
 
-        <EditText
-            android:id="@+id/txtMsg"
-            android:hint="Escriba su mensaje..."
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <Button
             android:id="@+id/btnSendMsg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enviar Mensaje"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Enviar Mensaje"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"/>
 
-        <Button
-            android:id="@+id/btnSendMsgAll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enviar Mensaje Todos"/>
+            <Button
+                android:id="@+id/btnSendMsgAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="Enviar Mensaje Todos"
+
+                />
+        </LinearLayout>
 
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtMsg"
+        android:layout_width="406dp"
+        android:layout_height="202dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="5dp"
+        android:hint="Escriba su mensaje..."
+        android:layout_below="@id/idtoolbar"/>
 
 </RelativeLayout>
