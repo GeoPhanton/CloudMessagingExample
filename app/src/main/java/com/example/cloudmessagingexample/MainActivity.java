@@ -1,8 +1,5 @@
 package com.example.cloudmessagingexample;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,8 +11,6 @@ import com.example.cloudmessagingexample.Model.MyResponse;
 import com.example.cloudmessagingexample.Model.Notification;
 import com.example.cloudmessagingexample.Model.Sender;
 import com.example.cloudmessagingexample.Remote.APIService;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -24,10 +19,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSendMsg;
-    Button btnSendMsgAll;
-    EditText txtMsg;
-    APIService mService;
+    private Button btnSendMsg;
+    private Button btnSendMsgAll;
+    private EditText txtMsg;
+    private APIService mService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,36 +83,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*FirebaseMessaging.getInstance().getToken()
-                .addOnCompleteListener(new OnCompleteListener<String>() {
-                    @Override
-                    public void onComplete(@NonNull Task<String> task) {
-                        if (!task.isSuccessful()) {
-                            Log.w("TAG", "Fetching FCM registration token failed", task.getException());
-                            return;
-                        }
 
-                        // Get new FCM registration token
-                        String token = task.getResult();
-
-                        // Log and toast
-                        String msg = "El token es: " + token;
-                        Log.d("TAG", msg);
-                        //Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-        FirebaseMessaging.getInstance().subscribeToTopic("geophantom")
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        String msg = "Suscrito al mejor canal";
-                        if (!task.isSuccessful()) {
-                            msg = "Suscripción fallida";
-                        }
-                        Log.d("TAG", msg);
-                        Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                    }
-                });*/
     }
 }
